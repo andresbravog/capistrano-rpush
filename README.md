@@ -2,18 +2,13 @@
 
 # Capistrano::Rpush
 
-[Capistrano::Rpush](https://github.com/juicyparts/capistrano-rpush) adds [Rpush](https://rubygems.org/gems/rpush) tasks to your [Capistrano](https://rubygems.org/gems/capistrano) deployment.
-
-## Capistrano 3
-
-This gem was developed against version 3.9.1. It uses the experimental ```Capistrano::Plugin```.
+[Capistrano::Rpush](https://github.com/juicyparts/capistrano-rpush) adds [Rpush](https://rubygems.org/gems/rpush) tasks to your Capistrano deployment.
 
 ## Rpush
 
-This gem was developed against version 3.0.0. Additionally it only provides tasks over a subset of available commands:
+This gem was developed against version 2.7.0. Additionally it only provides tasks over a subset of available commands:
 
     $ rpush --help
-
 ```
 Commands:
   rpush help [COMMAND]  # Describe available commands or one specific command
@@ -52,15 +47,8 @@ Or install it yourself as:
 ```ruby
   # In Rails.root/Capfile
 
-  require 'capistrano/rpush'
-  install_plugin Capistrano::Rpush
-```
-Or, to install the plugin without its hooks:
-```ruby
-  # In Rails.root/Capfile
 
   require 'capistrano/rpush'
-  install_plugin Capistrano::Rpush, load_hooks: false
 ```
 
 Now you can use cap -T to list tasks:
